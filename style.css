@@ -1,0 +1,154 @@
+<style type="text/css">
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),
+        url(wear-mask.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height:100vh;
+    color: white;
+}
+
+
+.n_style{
+    background-color: cornflowerblue;
+}
+.n_style a{color: lavenderblush;}
+
+#white{
+    color: white;
+}
+
+#white1{
+    border-color: white;
+    border-width: medium;
+}
+body{
+    font-family: 'Baloo Tammudu 2', cursive;
+}
+.main-nav a{
+    transform: scale(1);
+    transition: transform 0.5s, color 0.5s;
+}
+
+
+.main-nav a:hover{
+    color: white;
+    transform: scale(1.05);
+    border-bottom: 1px solid white; 
+}
+/*---------Main Header---------*/
+
+.m_header{
+    width: 100%;
+    height: 450px;
+}
+.rightside h1{
+    font-size: 60px;
+}
+.rotate img{
+    animation: go 3s linear infinite;
+}
+@keyframes go{
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+.leftside img{
+    animation: beat 3s linear infinite;
+}
+@keyframes beat{
+    0% {
+    transform: rotate(45deg) scale(0.8);
+  }
+  5% {
+    transform: rotate(45deg) scale(0.9);
+  }
+  10% {
+    transform: rotate(45deg) scale(0.8);
+  }
+  15% {
+    transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(0.8);
+  }
+  100% {
+    transform: rotate(45deg) scale(0.8);
+  }
+}
+
+/*--------------cases-update-------------*/
+
+.case-update{
+    margin: 0 0 30px 0;
+}
+.case-update h3{
+    color: #ff7675;
+}
+.case-update h1{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*--------------about section----------------*/
+
+.sub-section{
+    background-color: #fbfafd;
+}
+
+/*--------------symptoms images----------------*/
+.animate{
+    opacity: 0.9;
+    transform: scale(1);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.animate:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+
+/*--------------footer----------------*/
+.footer-style{
+    background-color: #a29bfe!important;
+}
+
+.footer-style p{
+    margin-bottom: 0!important;
+}
+
+#myBtn{
+    dispaly: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #00A8FF;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+#myBtn:hover{
+    background: #606060;
+}
+
+.count{
+    font-size: 35px;
+}
+
+</style>
